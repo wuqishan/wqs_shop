@@ -137,7 +137,7 @@ return [
     ],
 
     // 视图输出字符串内容替换
-    'view_replace_str'       => [],
+    'view_replace_str'       => ['__PUBLIC__'    =>  SITE_URL.'/static','__UPLOADS__'    =>  SITE_URL.'/uploads'],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
     'dispatch_error_tmpl'    => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
@@ -201,7 +201,7 @@ return [
         // SESSION_ID的提交变量,解决flash上传跨域
         'var_session_id' => '',
         // SESSION 前缀
-        'prefix'         => 'think',
+        'prefix'         => 'wqs_',
         // 驱动方式 支持redis memcache memcached
         'type'           => '',
         // 是否自动开启 SESSION
@@ -234,4 +234,17 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+
+    //验证码
+    'captcha'  => [
+        'codeSet'  => '2345678abcdefhijkmnpqrstuvwxyzABCDEFGHJKLMNPQRTUVWXY',
+        'fontSize' => 20,
+        'useCurve' => true,
+        'imageH'   => 40,
+        'imageW'   => 190,
+        'length'   => 1,
+        'reset'    => true,
+        'useCurve' => false,
+        'useNoise' => false
+    ]
 ];

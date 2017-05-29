@@ -11,11 +11,23 @@
 
 return [
     '__pattern__' => [
-        'name' => '\w+',
+        'name'  => '\w+',
+        'id'    => '\d+',
+        'year'  => '\d{4}',
+        'month' => '\d{2}',
     ],
+
     '[hello]'     => [
         ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
         ':name' => ['index/hello', ['method' => 'post']],
     ],
 
+    'admin/login/'                               => 'admin/index/login',
+    'admin/login_action/'                        => 'admin/admin/login_action',
+
+    'admin/index/'                               => 'admin/index/index',
+
+    'admin/goods/'                               => 'admin/goods/index',
+    'admin/goods_add/'                           => 'admin/goods/add',
+    'admin/goods_add_action/'                    => 'admin/goods/add_action',
 ];

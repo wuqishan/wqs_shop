@@ -1,0 +1,190 @@
+{include file="public/header" title="商品管理" /}
+<body>
+<!-- Left side content -->
+{include file="public/left" /}
+
+<!-- Right side -->
+<div id="rightSide">
+
+    <!-- Top fixed navigation -->
+    {include file="public/right_nav" /}
+
+    <!-- Responsive header -->
+    {include file="public/right_nav2" category="商品管理" category_desc="商品列表" /}
+
+    <!-- Main content wrapper -->
+    <div class="wrapper">
+        <!-- Dynamic table -->
+        <div class="widget">
+            <div class="title"><img src="__PUBLIC__/admin/images/icons/dark/full2.png" alt="" class="titleIcon" /><h6>商品列表</h6></div>
+            <div style="border-bottom: 1px solid #E7E7E7; margin-bottom: 3px;">
+                <form action="" class="form">
+                    <div>
+                        <div style="width: 260px; float: left">
+                            <div class="formRow">
+                                <label>名称: </label>
+                                <div class="formRight" style="width: 170px">
+                                    <input type="text">
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div style="width: 260px; float: left">
+                            <div class="formRow">
+                                <label>分类: </label>
+                                <div class="formRight" style="width: 170px">
+                                    <select name="">
+                                        <option>分类1</option>
+                                        <option>分类2</option>
+                                        <option>分类3</option>
+                                        <option>分类4</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div style="width: 300px; float: left">
+                            <div class="formRow">
+                                <label>库存(范围): </label>
+                                <div class="formRight" style="width: 80px">
+                                    <input type="text" >
+                                </div>
+                                <div class="formRight" style="width: 80px">
+                                    <input type="text" >
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div style="width: 100px; float: left">
+                            <div class="formRow">
+                                <a href="javascript:void(0)" title="" class="button greenB"><span>提交搜索</span></a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </form>
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0" class="display dTable">
+                <thead>
+                <tr>
+                    <th width="25"><input type="checkbox" class="select_all"></th>
+                    <th width="60">ID</th>
+                    <th>名称</th>
+                    <th width="60">价格</th>
+                    <th width="60">库存</th>
+                    <th>分类</th>
+                    <th width="120">上架日期</th>
+                    <th width="120">下架日期</th>
+                    <th width="166">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="center"><input type="checkbox" value=""></td>
+                    <td class="center">12</td>
+                    <td class="center">裤子</td>
+                    <td class="center">125￥</td>
+                    <td class="center">18</td>
+                    <td class="center">上衣</td>
+                    <td class="center">2015-12-12 12:00:00</td>
+                    <td class="center">2015-12-12 12:00:00</td>
+                    <td>
+                        <a href="#" title="" class="button blueB">
+                            <img src="__PUBLIC__/admin/images/icons/light/pencil.png" alt="" class="icon">
+                            <span>编辑</span>
+                        </a>
+                        <a href="#" title="" class="button redB">
+                            <img src="__PUBLIC__/admin/images/icons/light/close.png" alt="" class="icon">
+                            <span>删除</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center"><input type="checkbox" value=""></td>
+                    <td class="center">12</td>
+                    <td class="center">裤子</td>
+                    <td class="center">125￥</td>
+                    <td class="center">18</td>
+                    <td class="center">上衣</td>
+                    <td class="center">2015-12-12 12:00:00</td>
+                    <td class="center">2015-12-12 12:00:00</td>
+                    <td>
+                        <a href="#" title="" class="button blueB">
+                            <img src="__PUBLIC__/admin/images/icons/light/pencil.png" alt="" class="icon">
+                            <span>编辑</span>
+                        </a>
+                        <a href="#" title="" class="button redB">
+                            <img src="__PUBLIC__/admin/images/icons/light/close.png" alt="" class="icon">
+                            <span>删除</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center"><input type="checkbox" value=""></td>
+                    <td class="center">12</td>
+                    <td class="center">裤子</td>
+                    <td class="center">125￥</td>
+                    <td class="center">18</td>
+                    <td class="center">上衣</td>
+                    <td class="center">2015-12-12 12:00:00</td>
+                    <td class="center">2015-12-12 12:00:00</td>
+                    <td>
+                        <a href="#" title="" class="button blueB">
+                            <img src="__PUBLIC__/admin/images/icons/light/pencil.png" alt="" class="icon">
+                            <span>编辑</span>
+                        </a>
+                        <a href="#" title="" class="button redB">
+                            <img src="__PUBLIC__/admin/images/icons/light/close.png" alt="" class="icon">
+                            <span>删除</span>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center"><input type="checkbox" value=""></td>
+                    <td class="center">12</td>
+                    <td class="center">裤子</td>
+                    <td class="center">125￥</td>
+                    <td class="center">18</td>
+                    <td class="center">上衣</td>
+                    <td class="center">2015-12-12 12:00:00</td>
+                    <td class="center">2015-12-12 12:00:00</td>
+                    <td>
+                        <a href="#" title="" class="button brownB">
+                            <img src="__PUBLIC__/admin/images/icons/light/pencil.png" alt="" class="icon">
+                            <span>编辑</span>
+                        </a>
+                        <a href="#" title="" class="button brownB">
+                            <img src="__PUBLIC__/admin/images/icons/light/close.png" alt="" class="icon">
+                            <span>删除</span>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix">
+                <div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers">
+                    <span class="toFirst ui-corner-tl ui-corner-bl fg-button ui-button ui-state-disabled">First</span>
+                    <span class="previous fg-button ui-button ui-state-disabled">Prev</span>
+                    <span>
+                        <span class="fg-button ui-button ui-state-disabled">1</span>
+                        <span class="fg-button ui-button">2</span>
+                        <span class="fg-button ui-button">3</span>
+                        <span class="fg-button ui-button">4</span>
+                        <span class="fg-button ui-button">5</span>
+                    </span>
+                    <span class="next fg-button ui-button">Next</span>
+                    <span class="last ui-corner-tr ui-corner-br fg-button ui-button">Last</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer line -->
+    <div id="footer">
+        <div class="wrapper">As usually all rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
+    </div>
+
+</div>
+<div class="clear"></div>
+</body>
+</html>
